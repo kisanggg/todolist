@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      h1 {
+        text-align: center;
+        color: white;
+      }
+      .container {
+        border: 2px solid black;
+        width: 600px;
+        margin-left: 320px;
+      }
+      .myTodo {
+        background-color: rgb(51, 145, 199);
+        height: 150px;
+        padding: 2px;
+        text-align: center;
+      }
+      .todo {
+        height: 20px;
+        margin: 10px;
+        width: 300px;
+        margin-top: 10px;
+        border-radius: 4px;
+        border: 1px solid black;
+        margin-right: 1px;
+      }
+      .delete {
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 20px;
+        margin-left: 4px;
+        margin-top: 2px;
+      }
+      .Ul {
+        text-align: center;
+      }
+      .myElement {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 400px;
+        margin-top: 2px;
+      }
+      .class {
+        width: 700px;
+      }
+      .text {
+        width: 480px;
+      }
+      h3 {
+        text-align: center;
+      }
+      .button {
+        border: 1px solid black;
+        border-radius: 4px;
+        height: 20px;
+        margin-left: 5px;
+        color: rgb(19, 18, 18);
+        margin-top: 2px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="mainDiv" class="container">
+      <div class="myTodo">
+        <h1 class="heading">My ToDos</h1>
+        <input
+          type="text"
+          class="todo"
+          placeholder="Write your todo list here..."
+          id="myTodo"
+        />
+        <button id="add" class="button" onclick="newElement()">ADD</button>
+      </div>
+      <div class="list">
+        <h3>LIST OF WORKS TODO:</h3>
+        <ul id="myUl" class="Ul"></ul>
+      </div>
+    </div>
+    <script src="index2.js"></script>
+  </body>
+</html>
